@@ -1,0 +1,824 @@
+{
+  "users": [
+    {
+      "_id": "usr_admin_1",
+      "name": "Dr. Arthur Sterling",
+      "email": "admin@ariyo.edu",
+      "passwordHash": "5872c00e57cbb4d1ba38786a0ebb5bed50b46dd0c6db628ad2716e4536f66e1a",
+      "role": "ADMIN",
+      "phone": "+1 (555) 019-2831",
+      "profileImage": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80",
+      "isActive": true,
+      "isVerified": true,
+      "createdAt": "2025-08-01T09:00:00Z"
+    },
+    {
+      "_id": "usr_fac_1",
+      "name": "Dr. Ananya Sen",
+      "email": "ananya.sen@ariyo.edu",
+      "passwordHash": "5872c00e57cbb4d1ba38786a0ebb5bed50b46dd0c6db628ad2716e4536f66e1a",
+      "role": "FACULTY",
+      "phone": "+1 (555) 019-4422",
+      "profileImage": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&auto=format&fit=crop&q=80",
+      "isActive": true,
+      "isVerified": true,
+      "createdAt": "2025-08-05T10:00:00Z"
+    },
+    {
+      "_id": "usr_fac_2",
+      "name": "Prof. Marcus Vance",
+      "email": "marcus.vance@ariyo.edu",
+      "passwordHash": "5872c00e57cbb4d1ba38786a0ebb5bed50b46dd0c6db628ad2716e4536f66e1a",
+      "role": "FACULTY",
+      "phone": "+1 (555) 019-5561",
+      "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80",
+      "isActive": true,
+      "isVerified": true,
+      "createdAt": "2025-08-05T11:00:00Z"
+    },
+    {
+      "_id": "usr_stu_1",
+      "name": "Rahul Sharma",
+      "email": "student@ariyo.edu",
+      "passwordHash": "5872c00e57cbb4d1ba38786a0ebb5bed50b46dd0c6db628ad2716e4536f66e1a",
+      "role": "STUDENT",
+      "phone": "+1 (555) 019-7788",
+      "profileImage": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&auto=format&fit=crop&q=80",
+      "isActive": true,
+      "isVerified": true,
+      "createdAt": "2025-08-10T12:00:00Z"
+    },
+    {
+      "_id": "usr_stu_2",
+      "name": "Sophia Chen",
+      "email": "sophia.chen@ariyo.edu",
+      "passwordHash": "5872c00e57cbb4d1ba38786a0ebb5bed50b46dd0c6db628ad2716e4536f66e1a",
+      "role": "STUDENT",
+      "phone": "+1 (555) 019-8899",
+      "profileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80",
+      "isActive": true,
+      "isVerified": true,
+      "createdAt": "2025-08-10T12:30:00Z"
+    }
+  ],
+  "students": [
+    {
+      "_id": "stu_1",
+      "userId": "usr_stu_1",
+      "studentId": "AR2023-CS042",
+      "departmentId": "dept_cs",
+      "semester": 6,
+      "batch": "2023-2027",
+      "dateOfBirth": "2004-03-15",
+      "gender": "Male",
+      "address": "42 Highland Ave, Cambridge, MA",
+      "guardianName": "Ramesh Sharma",
+      "guardianPhone": "+1 (555) 012-3490",
+      "courses": [
+        "crs_btech_cs"
+      ],
+      "cgpa": 9.18,
+      "createdAt": "2025-08-10T12:00:00Z"
+    },
+    {
+      "_id": "stu_2",
+      "userId": "usr_stu_2",
+      "studentId": "AR2023-CS088",
+      "departmentId": "dept_cs",
+      "semester": 6,
+      "batch": "2023-2027",
+      "dateOfBirth": "2004-07-22",
+      "gender": "Female",
+      "address": "108 Beacon St, Boston, MA",
+      "guardianName": "David Chen",
+      "guardianPhone": "+1 (555) 014-5567",
+      "courses": [
+        "crs_btech_cs"
+      ],
+      "cgpa": 8.94,
+      "createdAt": "2025-08-10T12:30:00Z"
+    }
+  ],
+  "faculty": [
+    {
+      "_id": "fac_1",
+      "userId": "usr_fac_1",
+      "facultyId": "ARFAC-CS001",
+      "departmentId": "dept_cs",
+      "designation": "Distinguished Professor & Chair",
+      "qualification": "Ph.D. in Computer Science (MIT), M.Tech",
+      "subjects": [
+        "sub_algo",
+        "sub_dbms",
+        "sub_se"
+      ],
+      "courses": [
+        "crs_btech_cs",
+        "crs_mtech_ai"
+      ],
+      "createdAt": "2025-08-05T10:00:00Z"
+    },
+    {
+      "_id": "fac_2",
+      "userId": "usr_fac_2",
+      "facultyId": "ARFAC-IT004",
+      "departmentId": "dept_it",
+      "designation": "Senior Assistant Professor",
+      "qualification": "Ph.D. in Systems & Networking (Stanford)",
+      "subjects": [
+        "sub_net",
+        "sub_os"
+      ],
+      "courses": [
+        "crs_btech_cs",
+        "crs_btech_it"
+      ],
+      "createdAt": "2025-08-05T11:00:00Z"
+    }
+  ],
+  "departments": [
+    {
+      "_id": "dept_cs",
+      "name": "Computer Science & Engineering",
+      "code": "CSE",
+      "hod": "Dr. Ananya Sen",
+      "description": "Computing systems, algorithms, machine intelligence, and software engineering.",
+      "status": "Active",
+      "studentCount": 420,
+      "facultyCount": 24
+    },
+    {
+      "_id": "dept_it",
+      "name": "Information Technology",
+      "code": "IT",
+      "hod": "Prof. Marcus Vance",
+      "description": "Distributed systems, enterprise networking, and cloud architectures.",
+      "status": "Active",
+      "studentCount": 380,
+      "facultyCount": 18
+    },
+    {
+      "_id": "dept_ece",
+      "name": "Electronics & Communication",
+      "code": "ECE",
+      "hod": "Dr. Elena Rostova",
+      "description": "Semiconductors, signal processing, and telecommunications.",
+      "status": "Active",
+      "studentCount": 310,
+      "facultyCount": 16
+    },
+    {
+      "_id": "dept_mech",
+      "name": "Mechanical Engineering",
+      "code": "MECH",
+      "hod": "Dr. Vikram Patel",
+      "description": "Thermodynamics, robotics, and advanced manufacturing.",
+      "status": "Active",
+      "studentCount": 290,
+      "facultyCount": 14
+    },
+    {
+      "_id": "dept_civil",
+      "name": "Civil Engineering",
+      "code": "CIVIL",
+      "hod": "Prof. Thomas Wright",
+      "description": "Structural design, hydrology, and sustainable urban infrastructure.",
+      "status": "Active",
+      "studentCount": 240,
+      "facultyCount": 12
+    },
+    {
+      "_id": "dept_bba",
+      "name": "Business Administration",
+      "code": "BBA",
+      "hod": "Dr. Sarah Jenkins",
+      "description": "Strategic management, financial systems, and entrepreneurship.",
+      "status": "Active",
+      "studentCount": 350,
+      "facultyCount": 20
+    }
+  ],
+  "courses": [
+    {
+      "_id": "crs_btech_cs",
+      "name": "B.Tech Computer Science & Engineering",
+      "code": "CS-401",
+      "departmentId": "dept_cs",
+      "semester": 6,
+      "credits": 24,
+      "facultyId": "fac_1",
+      "description": "Flagship B.Tech Computer Science and AI"
+    },
+    {
+      "_id": "crs_btech_it",
+      "name": "B.Tech Information Technology",
+      "code": "IT-302",
+      "departmentId": "dept_it",
+      "semester": 4,
+      "credits": 22,
+      "facultyId": "fac_2",
+      "description": "Undergraduate curriculum specializing in networks and enterprise software."
+    },
+    {
+      "_id": "crs_mtech_ai",
+      "name": "M.Tech Artificial Intelligence & Robotics",
+      "code": "AI-601",
+      "departmentId": "dept_cs",
+      "semester": 2,
+      "credits": 20,
+      "facultyId": "fac_1",
+      "description": "Postgraduate program covering neural architectures and autonomous agents."
+    }
+  ],
+  "subjects": [
+    {
+      "_id": "sub_algo",
+      "name": "Design & Analysis of Algorithms",
+      "code": "CS601",
+      "courseId": "crs_btech_cs",
+      "departmentId": "dept_cs",
+      "semester": 6,
+      "credits": 4,
+      "facultyId": "fac_1"
+    },
+    {
+      "_id": "sub_dbms",
+      "name": "Distributed Database Systems",
+      "code": "CS602",
+      "courseId": "crs_btech_cs",
+      "departmentId": "dept_cs",
+      "semester": 6,
+      "credits": 4,
+      "facultyId": "fac_1"
+    },
+    {
+      "_id": "sub_net",
+      "name": "Computer Networks & Security",
+      "code": "CS603",
+      "courseId": "crs_btech_cs",
+      "departmentId": "dept_cs",
+      "semester": 6,
+      "credits": 4,
+      "facultyId": "fac_2"
+    },
+    {
+      "_id": "sub_os",
+      "name": "Operating Systems Architecture",
+      "code": "CS604",
+      "courseId": "crs_btech_cs",
+      "departmentId": "dept_cs",
+      "semester": 6,
+      "credits": 3,
+      "facultyId": "fac_2"
+    },
+    {
+      "_id": "sub_se",
+      "name": "Software Engineering Principles",
+      "code": "CS605",
+      "courseId": "crs_btech_cs",
+      "departmentId": "dept_cs",
+      "semester": 6,
+      "credits": 3,
+      "facultyId": "fac_1"
+    }
+  ],
+  "attendance": [
+    {
+      "_id": "att_1",
+      "studentId": "stu_1",
+      "facultyId": "fac_1",
+      "subjectId": "sub_algo",
+      "date": "2026-09-18",
+      "status": "Present"
+    },
+    {
+      "_id": "att_2",
+      "studentId": "stu_1",
+      "facultyId": "fac_1",
+      "subjectId": "sub_algo",
+      "date": "2026-09-19",
+      "status": "Present"
+    },
+    {
+      "_id": "att_3",
+      "studentId": "stu_1",
+      "facultyId": "fac_1",
+      "subjectId": "sub_algo",
+      "date": "2026-09-20",
+      "status": "Present"
+    },
+    {
+      "_id": "att_4",
+      "studentId": "stu_1",
+      "facultyId": "fac_1",
+      "subjectId": "sub_algo",
+      "date": "2026-09-21",
+      "status": "Late",
+      "remarks": "Traffic delay"
+    },
+    {
+      "_id": "att_5",
+      "studentId": "stu_1",
+      "facultyId": "fac_1",
+      "subjectId": "sub_dbms",
+      "date": "2026-09-18",
+      "status": "Present"
+    },
+    {
+      "_id": "att_6",
+      "studentId": "stu_1",
+      "facultyId": "fac_1",
+      "subjectId": "sub_dbms",
+      "date": "2026-09-20",
+      "status": "Present"
+    },
+    {
+      "_id": "att_7",
+      "studentId": "stu_1",
+      "facultyId": "fac_2",
+      "subjectId": "sub_net",
+      "date": "2026-09-19",
+      "status": "Present"
+    },
+    {
+      "_id": "att_8",
+      "studentId": "stu_1",
+      "facultyId": "fac_2",
+      "subjectId": "sub_net",
+      "date": "2026-09-21",
+      "status": "Present"
+    },
+    {
+      "_id": "att_9",
+      "studentId": "stu_1",
+      "facultyId": "fac_2",
+      "subjectId": "sub_os",
+      "date": "2026-09-18",
+      "status": "Present"
+    },
+    {
+      "_id": "att_10",
+      "studentId": "stu_1",
+      "facultyId": "fac_2",
+      "subjectId": "sub_os",
+      "date": "2026-09-21",
+      "status": "Absent",
+      "remarks": "Medical leave"
+    },
+    {
+      "_id": "att_11",
+      "studentId": "stu_2",
+      "facultyId": "fac_1",
+      "subjectId": "sub_algo",
+      "date": "2026-09-21",
+      "status": "Present"
+    },
+    {
+      "_id": "att_12",
+      "studentId": "stu_2",
+      "facultyId": "fac_2",
+      "subjectId": "sub_net",
+      "date": "2026-09-21",
+      "status": "Present"
+    }
+  ],
+  "assignments": [
+    {
+      "_id": "asg_1",
+      "title": "Dynamic Programming: Knapsack & Longest Common Subsequence",
+      "description": "Implement bottom-up DP solutions with space optimization and formal algorithmic complexity analysis.",
+      "facultyId": "fac_1",
+      "subjectId": "sub_algo",
+      "courseId": "crs_btech_cs",
+      "dueDate": "2026-09-28T23:59:59Z",
+      "maxMarks": 50,
+      "createdAt": "2026-09-15T10:00:00Z"
+    },
+    {
+      "_id": "asg_2",
+      "title": "Query Optimization & B+ Tree Index Partitioning",
+      "description": "Benchmark composite indices against query execution plans on a 2-million record synthetic dataset.",
+      "facultyId": "fac_1",
+      "subjectId": "sub_dbms",
+      "courseId": "crs_btech_cs",
+      "dueDate": "2026-10-02T23:59:59Z",
+      "maxMarks": 40,
+      "createdAt": "2026-09-18T14:00:00Z"
+    },
+    {
+      "_id": "asg_3",
+      "title": "Zero-Knowledge Cryptographic Handshake Simulation",
+      "description": "Simulate TLS 1.3 key exchange using elliptic curve Diffie-Hellman in Wireshark packet captures.",
+      "facultyId": "fac_2",
+      "subjectId": "sub_net",
+      "courseId": "crs_btech_cs",
+      "dueDate": "2026-10-05T23:59:59Z",
+      "maxMarks": 60,
+      "createdAt": "2026-09-20T09:00:00Z"
+    }
+  ],
+  "submissions": [
+    {
+      "_id": "subm_1",
+      "assignmentId": "asg_1",
+      "studentId": "stu_1",
+      "fileUrl": "/uploads/asg1_rahul_sharma.pdf",
+      "fileName": "DP_Algorithms_AR2023CS042.pdf",
+      "submittedAt": "2026-09-20T19:40:00Z",
+      "status": "Graded",
+      "marks": 48,
+      "feedback": "Excellent asymptotic time and space optimization diagrams. Clean proof of correctness."
+    },
+    {
+      "_id": "subm_2",
+      "assignmentId": "asg_2",
+      "studentId": "stu_1",
+      "fileUrl": "/uploads/asg2_rahul_sharma.pdf",
+      "fileName": "DBMS_Optimization_AR2023CS042.pdf",
+      "submittedAt": "2026-09-22T06:15:00Z",
+      "status": "Submitted"
+    }
+  ],
+  "results": [
+    {
+      "_id": "res_1",
+      "studentId": "stu_1",
+      "subjectId": "sub_algo",
+      "semester": 6,
+      "internalMarks": 28,
+      "assignmentMarks": 19,
+      "practicalMarks": 24,
+      "examMarks": 25,
+      "totalMarks": 96,
+      "grade": "A+",
+      "gradePoint": 10
+    },
+    {
+      "_id": "res_2",
+      "studentId": "stu_1",
+      "subjectId": "sub_dbms",
+      "semester": 6,
+      "internalMarks": 26,
+      "assignmentMarks": 18,
+      "practicalMarks": 23,
+      "examMarks": 24,
+      "totalMarks": 91,
+      "grade": "A+",
+      "gradePoint": 10
+    },
+    {
+      "_id": "res_3",
+      "studentId": "stu_1",
+      "subjectId": "sub_net",
+      "semester": 6,
+      "internalMarks": 25,
+      "assignmentMarks": 17,
+      "practicalMarks": 22,
+      "examMarks": 24,
+      "totalMarks": 88,
+      "grade": "A",
+      "gradePoint": 9
+    },
+    {
+      "_id": "res_4",
+      "studentId": "stu_1",
+      "subjectId": "sub_os",
+      "semester": 6,
+      "internalMarks": 24,
+      "assignmentMarks": 17,
+      "practicalMarks": 21,
+      "examMarks": 23,
+      "totalMarks": 85,
+      "grade": "A",
+      "gradePoint": 9
+    },
+    {
+      "_id": "res_5",
+      "studentId": "stu_1",
+      "subjectId": "sub_se",
+      "semester": 6,
+      "internalMarks": 27,
+      "assignmentMarks": 18,
+      "practicalMarks": 24,
+      "examMarks": 23,
+      "totalMarks": 92,
+      "grade": "A+",
+      "gradePoint": 10
+    }
+  ],
+  "timetable": [
+    {
+      "_id": "tt_1",
+      "day": "Monday",
+      "startTime": "09:00",
+      "endTime": "10:15",
+      "subjectId": "sub_algo",
+      "facultyId": "fac_1",
+      "room": "Turing Hall (LH-301)",
+      "departmentId": "dept_cs",
+      "semester": 6
+    },
+    {
+      "_id": "tt_2",
+      "day": "Monday",
+      "startTime": "10:30",
+      "endTime": "11:45",
+      "subjectId": "sub_dbms",
+      "facultyId": "fac_1",
+      "room": "Systems Lab B",
+      "departmentId": "dept_cs",
+      "semester": 6
+    },
+    {
+      "_id": "tt_3",
+      "day": "Tuesday",
+      "startTime": "09:00",
+      "endTime": "10:15",
+      "subjectId": "sub_net",
+      "facultyId": "fac_2",
+      "room": "Networking Lab (NL-104)",
+      "departmentId": "dept_cs",
+      "semester": 6
+    },
+    {
+      "_id": "tt_4",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "12:15",
+      "subjectId": "sub_algo",
+      "facultyId": "fac_1",
+      "room": "Turing Hall (LH-301)",
+      "departmentId": "dept_cs",
+      "semester": 6
+    },
+    {
+      "_id": "tt_5",
+      "day": "Thursday",
+      "startTime": "13:30",
+      "endTime": "15:30",
+      "subjectId": "sub_os",
+      "facultyId": "fac_2",
+      "room": "Operating Systems Sandbox",
+      "departmentId": "dept_cs",
+      "semester": 6
+    },
+    {
+      "_id": "tt_6",
+      "day": "Friday",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "subjectId": "sub_se",
+      "facultyId": "fac_1",
+      "room": "Auditorium West",
+      "departmentId": "dept_cs",
+      "semester": 6
+    },
+    {
+      "_id": "tt_7",
+      "day": "Saturday",
+      "startTime": "10:00",
+      "endTime": "12:00",
+      "subjectId": "sub_algo",
+      "facultyId": "fac_1",
+      "room": "Seminar Hall 2",
+      "departmentId": "dept_cs",
+      "semester": 6
+    }
+  ],
+  "notices": [
+    {
+      "_id": "ntc_1",
+      "title": "End-Semester Theory & Practical Examination Schedule",
+      "description": "The final examination schedule for B.Tech Semesters 4, 6 and M.Tech has been published by the Controller of Examinations. Hall tickets are available for download.",
+      "category": "Examination",
+      "priority": "Urgent",
+      "targetAudience": "ALL",
+      "department": "dept_cs",
+      "semester": 6,
+      "publishedAt": "2026-09-21T08:00:00Z",
+      "createdBy": "Dr. Arthur Sterling"
+    },
+    {
+      "_id": "ntc_2",
+      "title": "Annual Campus Hackathon — HackARIYO 2026 Registrations Open",
+      "description": "48-hour national level hackathon focusing on AI for Sustainability and Smart Infrastructure. Cash prizes worth $25,000 sponsored by premier tech partners.",
+      "category": "Event",
+      "priority": "High",
+      "targetAudience": "STUDENT",
+      "publishedAt": "2026-09-20T11:30:00Z",
+      "createdBy": "Dr. Ananya Sen"
+    },
+    {
+      "_id": "ntc_3",
+      "title": "Academic Council Meeting & Curriculum Revision Guidelines",
+      "description": "Mandatory faculty briefing regarding outcome-based education (OBE) accreditation and updated credit distribution matrices.",
+      "category": "Academic",
+      "priority": "Medium",
+      "targetAudience": "FACULTY",
+      "publishedAt": "2026-09-19T14:00:00Z",
+      "createdBy": "Dr. Arthur Sterling"
+    },
+    {
+      "_id": "ntc_4",
+      "title": "Campus Solar Microgrid Upgrade & Planned Power Shift",
+      "description": "Green energy transition work will take place this Sunday from 02:00 AM to 06:00 AM. Backup generators will supply uninterrupted power to server facilities.",
+      "category": "General",
+      "priority": "Low",
+      "targetAudience": "ALL",
+      "publishedAt": "2026-09-18T16:00:00Z",
+      "createdBy": "Campus Facilities"
+    }
+  ],
+  "events": [
+    {
+      "_id": "evt_1",
+      "title": "HackARIYO: National Smart Campus Hackathon",
+      "description": "A 48-hour student innovation challenge creating open smart campus tools, generative AI assistants, and green sensor telemetry.",
+      "date": "2026-10-14",
+      "time": "09:00 AM - 05:00 PM",
+      "venue": "Main Innovation & Research Complex",
+      "organizer": "Department of Computer Science & Robotics Club",
+      "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&auto=format&fit=crop&q=80",
+      "registrationLink": "https://ariyo.edu/hackariyo",
+      "attendeesCount": 384,
+      "createdBy": "admin@ariyo.edu"
+    },
+    {
+      "_id": "evt_2",
+      "title": "Global Tech Symposium: Quantum & Neural Architectures",
+      "description": "Distinguished keynotes from IEEE fellows, Turing laureates, and industry leaders on quantum algorithms and agentic computing.",
+      "date": "2026-10-22",
+      "time": "10:00 AM - 04:30 PM",
+      "venue": "Grand Convocation Auditorium",
+      "organizer": "Academic Affairs Council",
+      "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&auto=format&fit=crop&q=80",
+      "registrationLink": "https://ariyo.edu/symposium",
+      "attendeesCount": 520,
+      "createdBy": "admin@ariyo.edu"
+    },
+    {
+      "_id": "evt_3",
+      "title": "Inter-Collegiate Cultural Festival: AURA 2026",
+      "description": "Three days of music, theatre, digital arts, choreography, and culinary showcases celebrating campus multiculturalism.",
+      "date": "2026-11-05",
+      "time": "04:00 PM - 10:00 PM",
+      "venue": "Open Air Amphitheatre",
+      "organizer": "Student Cultural Committee",
+      "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&auto=format&fit=crop&q=80",
+      "registrationLink": "https://ariyo.edu/aura",
+      "attendeesCount": 1450,
+      "createdBy": "admin@ariyo.edu"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "notif_1",
+      "userId": "usr_stu_1",
+      "title": "Assignment Graded",
+      "message": "Dr. Ananya Sen graded your submission for Dynamic Programming (48/50).",
+      "type": "assignment",
+      "read": false,
+      "createdAt": "2026-09-21T18:00:00Z"
+    },
+    {
+      "_id": "notif_2",
+      "userId": "usr_stu_1",
+      "title": "Exam Schedule Announced",
+      "message": "End-semester examination schedule for Semester 6 is now available.",
+      "type": "notice",
+      "read": false,
+      "createdAt": "2026-09-21T08:15:00Z"
+    },
+    {
+      "_id": "notif_3",
+      "userId": "usr_stu_1",
+      "title": "Attendance Alert",
+      "message": "Your overall attendance is healthy at 90.9%. Keep it above 85% for exam clearance.",
+      "type": "attendance",
+      "read": true,
+      "createdAt": "2026-09-20T10:00:00Z"
+    },
+    {
+      "_id": "notif_4",
+      "userId": "usr_fac_1",
+      "title": "New Assignment Submissions",
+      "message": "24 students submitted their DBMS Optimization queries.",
+      "type": "assignment",
+      "read": false,
+      "createdAt": "2026-09-22T06:30:00Z"
+    },
+    {
+      "_id": "notif_5",
+      "userId": "usr_admin_1",
+      "title": "System Audit",
+      "message": "Daily integrity checks completed across all student enrollment records.",
+      "type": "system",
+      "read": true,
+      "createdAt": "2026-09-22T04:00:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "_id": "log_1790095686088_70z7",
+      "userId": "usr_admin_1",
+      "userName": "Dr. Arthur Sterling",
+      "role": "ADMIN",
+      "action": "FACULTY_UPDATED",
+      "entity": "Faculty",
+      "entityId": "fac_1",
+      "details": "Updated faculty ARFAC-CS001 (Dr. Ananya Sen)",
+      "timestamp": "2026-09-22T16:48:06.088Z"
+    },
+    {
+      "_id": "log_1790095686070_tzb3",
+      "userId": "usr_admin_1",
+      "userName": "Dr. Arthur Sterling",
+      "role": "ADMIN",
+      "action": "USER_LOGIN",
+      "entity": "Auth",
+      "entityId": "usr_admin_1",
+      "details": "User logged in successfully",
+      "timestamp": "2026-09-22T16:48:06.070Z"
+    },
+    {
+      "_id": "log_1790095678360_2lr3",
+      "userId": "usr_admin_1",
+      "userName": "Dr. Arthur Sterling",
+      "role": "ADMIN",
+      "action": "COURSE_UPDATED",
+      "entity": "Course",
+      "entityId": "crs_btech_cs",
+      "details": "Updated course B.Tech Computer Science & Engineering",
+      "timestamp": "2026-09-22T16:47:58.360Z"
+    },
+    {
+      "_id": "log_1790095678342_0sdg",
+      "userId": "usr_admin_1",
+      "userName": "Dr. Arthur Sterling",
+      "role": "ADMIN",
+      "action": "USER_LOGIN",
+      "entity": "Auth",
+      "entityId": "usr_admin_1",
+      "details": "User logged in successfully",
+      "timestamp": "2026-09-22T16:47:58.342Z"
+    },
+    {
+      "_id": "log_1790095674807_8fj6",
+      "userId": "usr_admin_1",
+      "userName": "Dr. Arthur Sterling",
+      "role": "ADMIN",
+      "action": "USER_LOGIN",
+      "entity": "Auth",
+      "entityId": "usr_admin_1",
+      "details": "User logged in successfully",
+      "timestamp": "2026-09-22T16:47:54.807Z"
+    },
+    {
+      "_id": "log_1790094877649_2h7z",
+      "userId": "usr_admin_1",
+      "userName": "Dr. Arthur Sterling",
+      "role": "ADMIN",
+      "action": "USER_LOGIN",
+      "entity": "Auth",
+      "entityId": "usr_admin_1",
+      "details": "User logged in successfully",
+      "timestamp": "2026-09-22T16:34:37.649Z"
+    },
+    {
+      "_id": "log_1",
+      "userId": "usr_admin_1",
+      "userName": "Dr. Arthur Sterling",
+      "role": "ADMIN",
+      "action": "SYSTEM_INITIALIZATION",
+      "entity": "System",
+      "entityId": "ariyo_core",
+      "details": "ARIYO Smart Campus Core initialized with 6 academic departments and role security.",
+      "timestamp": "2026-09-15T00:00:00Z",
+      "ip": "127.0.0.1"
+    },
+    {
+      "_id": "log_2",
+      "userId": "usr_fac_1",
+      "userName": "Dr. Ananya Sen",
+      "role": "FACULTY",
+      "action": "ATTENDANCE_RECORDED",
+      "entity": "Attendance",
+      "entityId": "sub_algo",
+      "details": "Marked lecture attendance for 42 students in Design & Analysis of Algorithms.",
+      "timestamp": "2026-09-21T10:20:00Z",
+      "ip": "10.0.4.12"
+    },
+    {
+      "_id": "log_3",
+      "userId": "usr_admin_1",
+      "userName": "Dr. Arthur Sterling",
+      "role": "ADMIN",
+      "action": "NOTICE_PUBLISHED",
+      "entity": "Notice",
+      "entityId": "ntc_1",
+      "details": "Published high-priority notice: End-Semester Theory & Practical Examination Schedule.",
+      "timestamp": "2026-09-21T08:00:00Z",
+      "ip": "10.0.1.2"
+    }
+  ]
+}

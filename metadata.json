@@ -1,0 +1,6 @@
+{
+  "name": "ARIYO - Smart College Management System",
+  "description": "Smart College Management System connecting students, faculty, and administrators with attendance, assignments, results, timetables, and offline support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
